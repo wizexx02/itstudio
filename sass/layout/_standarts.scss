@@ -1,0 +1,37 @@
+.standarts{
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+&__title{
+    font-weight: 700;
+    font-size: 36px;
+    color: $color-sections;
+    margin-bottom: 60px;
+}
+&__text{
+    color: $third-color-light-gray;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 42px;
+}
+&__list-item{
+    margin-top: 70px;
+}
+&__link{
+    color: $second-color-text;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+&__list-num{
+    color: $color-hover;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+&__list-text{
+    color: $third-color-light-gray;
+    font-size: 16px;
+    font-weight: 400;
+}}
