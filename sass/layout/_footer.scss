@@ -1,7 +1,10 @@
 .footer{
     padding-top: 70px;
     padding-bottom: 30px;
-
+    background-color: rgba(246, 246, 248, 1);
+&__subtitle{
+    border-top: 1px solid rgba(224, 224, 224, 1);
+}
 &__link{
     color: $third-color-light-gray;
     font-size: 14px;

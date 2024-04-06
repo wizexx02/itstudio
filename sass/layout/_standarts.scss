@@ -1,7 +1,7 @@
 .standarts{
     padding-top: 100px;
     padding-bottom: 70px;
-
+    background-color: rgba(246, 246, 248, 1);
 &__title{
     font-weight: 700;
     font-size: 36px;
@@ -15,23 +15,26 @@
     line-height: 26px;
     margin-bottom: 42px;
 }
-&__list-item{
-    margin-top: 70px;
-}
 &__link{
     color: $second-color-text;
     font-size: 16px;
     font-weight: 500;
     text-decoration: underline;
 }
-&__list-num{
+&__list{
+    border-top: 1px solid rgba(246, 246, 248, 1);
+&-item{
+    margin-top: 70px;
+}
+
+&-num{
     color: $color-hover;
     font-size: 36px;
     font-weight: 400;
     margin-bottom: 17px;
 }
-&__list-text{
+&-text{
     color: $third-color-light-gray;
     font-size: 16px;
     font-weight: 400;
-}}
+}}}

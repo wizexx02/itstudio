@@ -1,5 +1,22 @@
-.header__list-link{
+.header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(161, 161, 161, 0.5);
+    height: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__nav{
+        display: flex;
+    }
+    &__list{
+        display: flex;
+         gap: 40px;
+         margin-left: auto;
+
+&-link{
     color: $first-color;
     font-size: 16px;
     font-weight: 500;
-}
+}} }
