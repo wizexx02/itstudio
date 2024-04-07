@@ -2,6 +2,7 @@
     padding-top: 100px;
     padding-bottom: 130px;
     background-color: rgba(246, 246, 248, 1);
+    text-align: center;
 &__title{
     color: $color-hover;
     font-size: 36px;
@@ -15,6 +16,13 @@
     line-height: 25.36px;
     margin-bottom: 50px;
 }
-&__list-item{
+&__list{
+display: flex;
+gap:30px;
+&-item{
     margin-bottom: 50px;
-}}
+}
+&-img{
+    height: 255px;
+    width: 255px;
+}}}

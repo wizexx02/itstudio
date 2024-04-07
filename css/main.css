@@ -68,10 +68,49 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 27px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1113px;
+}
+.apps__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 17px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.apps__list-border {
+  width: 110px;
+  height: 110px;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.apps__list-supborder {
+  width: 90px;
+  height: 90px;
+  border: 1px solid rgb(73, 133, 255);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .apps__list-title {
   font-size: 18px;
@@ -93,6 +132,7 @@ body {
   padding-top: 100px;
   padding-bottom: 130px;
   background-color: rgb(246, 246, 248);
+  text-align: center;
 }
 .code__title {
   color: rgb(0, 0, 0);
@@ -107,8 +147,18 @@ body {
   line-height: 25.36px;
   margin-bottom: 50px;
 }
+.code__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
 .code__list-item {
   margin-bottom: 50px;
+}
+.code__list-img {
+  height: 255px;
+  width: 255px;
 }
 
 .create {
@@ -137,18 +187,36 @@ body {
   padding-bottom: 30px;
   background-color: rgb(246, 246, 248);
 }
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
 .footer__subtitle {
   border-top: 1px solid rgb(224, 224, 224);
+  text-align: center;
 }
 .footer__link {
   color: rgb(153, 153, 153);
   font-size: 14px;
   font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
 }
 .footer__link-main {
   color: rgb(153, 153, 153);
   font-size: 14px;
   font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
 }
 .footer__secret {
   color: rgb(153, 153, 153);
@@ -188,10 +256,20 @@ body {
   gap: 40px;
   margin-left: auto;
 }
+.header__list-line::after {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 59px;
+}
 .header__list-link {
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 500;
+  position: relative;
 }
 
 .spezialisation {
@@ -281,6 +359,43 @@ body {
 .subscribe {
   padding-top: 85px;
   padding-bottom: 85px;
+  text-align: center;
+}
+.subscribe__input {
+  border: none;
+}
+.subscribe__input::-webkit-input-placeholder {
+  color: rgb(153, 153, 153);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.5px;
+}
+.subscribe__input::-moz-placeholder {
+  color: rgb(153, 153, 153);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.5px;
+}
+.subscribe__input:-ms-input-placeholder {
+  color: rgb(153, 153, 153);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.5px;
+}
+.subscribe__input::-ms-input-placeholder {
+  color: rgb(153, 153, 153);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.5px;
+}
+.subscribe__input::placeholder {
+  color: rgb(153, 153, 153);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.5px;
+}
+.subscribe__input:focus {
+  outline: none;
 }
 .subscribe__title {
   color: rgb(0, 0, 0);
@@ -295,7 +410,16 @@ body {
   margin-bottom: 30px;
 }
 .subscribe__form {
+  border-radius: 30px;
+  border: 1px solid rgb(242, 242, 242);
+  max-width: 489px;
+  height: 45px;
+  margin: 0 auto;
   margin-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 33px;
 }
 .subscribe__button {
   color: rgb(255, 255, 255);
@@ -304,7 +428,8 @@ body {
   background-color: rgb(73, 133, 255);
   width: 200px;
   height: 45px;
-  border-radius: 30px;
+  border-radius: 0px 30px 30px 0px;
+  margin-left: auto;
 }
 .subscribe__warn {
   font-size: 16px;

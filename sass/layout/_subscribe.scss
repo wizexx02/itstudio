@@ -1,7 +1,20 @@
 .subscribe{
     padding-top: 85px;
     padding-bottom: 85px;
-
+    text-align: center;
+&__input{
+    border: none;
+    &::placeholder{
+        color: rgba(153, 153, 153, 1);
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20.5px;
+    }
+    &:focus{
+        outline: none;
+    }
+    
+}
 &__title{
     color: $color-hover;
     font-size: 18px;
@@ -15,7 +28,14 @@
     margin-bottom: 30px;
 }
 &__form{
+    border-radius: 30px;
+    border: 1px solid rgba(242, 242, 242, 1);
+    max-width: 489px;
+    height: 45px;
+    margin: 0 auto;
     margin-bottom: 35px;
+    display: flex;
+    padding-left: 33px;
 }
 &__button{
     color: $first-color;
@@ -24,7 +44,8 @@
     background-color: $second-color-text;
     width: 200px;
     height: 45px;
-    border-radius: 30px;
+    border-radius: 0px 30px 30px 0px;
+    margin-left: auto;
 }
 &__warn{
     font-size: 16px;
