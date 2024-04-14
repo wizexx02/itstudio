@@ -305,6 +305,8 @@ body {
           justify-content: space-between;
   gap: 30px;
   border-bottom: 1px solid rgb(224, 224, 224);
+  list-style: none;
+  counter-reset: custom-counter;
 }
 .spezialisation__list-span {
   color: rgb(73, 133, 255);
@@ -316,12 +318,33 @@ body {
 }
 .spezialisation__list-item {
   margin-bottom: 85px;
+  counter-increment: custom-counter;
+  gap: 10px;
 }
 .spezialisation__list-title {
   font-size: 18px;
   font-weight: 600;
   color: rgb(0, 0, 0);
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+.spezialisation__list-title::before {
+  content: "0" counter(custom-counter) ".";
+  color: rgb(73, 133, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
 }
 .spezialisation__list-text {
   color: rgb(153, 153, 153);
