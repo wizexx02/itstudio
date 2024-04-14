@@ -2,6 +2,11 @@
     padding-top: 100px;
     padding-bottom: 70px;
     background-color: rgba(246, 246, 248, 1);
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 90px;
+    }
 &__title{
     font-weight: 700;
     font-size: 36px;
@@ -22,7 +27,9 @@
     text-decoration: underline;
 }
 &__list{
-    border-top: 1px solid rgba(246, 246, 248, 1);
+    border-top: 1px solid rgba(224, 224, 224, 1);
+    display: flex;
+    justify-content: space-between;
 &-item{
     margin-top: 70px;
 }
@@ -37,4 +44,10 @@
     color: $third-color-light-gray;
     font-size: 16px;
     font-weight: 400;
-}}}
+}
+&-wrapper{
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+}
+}}

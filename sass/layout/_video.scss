@@ -1,7 +1,38 @@
 .video{
     padding-top: 70px;
     padding-bottom: 85px;
-    border-bottom: 1px solid light grey;
+    background-image: url("../../images/videoing.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    &__container{
+        border-bottom: 1px solid rgba(224, 224, 224, 1);
+        padding-bottom: 85px;
+    }
+    &__screen{
+        width: 970px;
+        height: 430px;
+        background-image: url("../../images/video.png");
+        border-radius: 10px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        &-button{
+            border: 1px solid rgba(255, 255, 255, 1);
+            border-radius: 200px;
+            width: 300px;
+            height: 100px;
+            background-color: transparent;
+            color: rgba(255, 255, 255, 1);
+            font-size: 16px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 21px;
+            margin: 0 auto;
+            
+        }
+    }
 &__title{
     color: $first-color;
     font-weight: 700;

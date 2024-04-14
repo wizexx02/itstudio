@@ -1,7 +1,12 @@
 .spezialisation{
     padding-top: 100px;
     padding-bottom: 85px;
-
+    background-image: linear-gradient(to bottom, rgba(80, 77, 194, 1) 50%, #ffff 50%);
+    &__wrapper-text{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
 &__title{
     color: $first-color;
     font-size: 36px;
@@ -9,33 +14,40 @@
     line-height: 53px;
     margin-bottom: 70px;
 }
-&__list-span{
-    color: $second-color-text;
-    font-size: 18px;
-    font-weight: 600;
+&__list{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    &-span{
+        color: $second-color-text;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    &-img{
+        margin-bottom: 20px;
+    }
+    &-item{
+        margin-bottom: 85px;
+    }
+    &-title{
+        font-size: 18px;
+        font-weight: 600;
+        color: $color-hover;
+        margin-bottom: 20px;
+    }
+    &-text{
+        color: $third-color-light-gray;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.36px;
+        margin-bottom: 47px;
+    }
+    &-link{
+        color: $second-color-text;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: underline;
+    }
 }
-&__list-img{
-    margin-bottom: 20px;
 }
-&__list-item{
-    margin-bottom: 85px;
-}
-&__list-title{
-    font-size: 18px;
-    font-weight: 600;
-    color: $color-hover;
-    margin-bottom: 20px;
-}
-&__list-text{
-    color: $third-color-light-gray;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25.36px;
-    margin-bottom: 47px;
-}
-&__list-link{
-    color: $second-color-text;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: underline;
-}}
