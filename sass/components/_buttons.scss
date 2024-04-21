@@ -1,9 +1,10 @@
 .main__button{
-    color: $first-color;
-    font-size: 16px;
-    font-weight: 500;
-    background-color: $second-color-text;
-    width: 200px;
-    height: 45px;
-    border-radius: 30px;
+    // color: $first-color;
+    // font-size: 16px;
+    // font-weight: 500;
+    // background-color: $second-color-text;
+    // width: 200px;
+    // height: 45px;
+    // border-radius: 30px;
+    @include button($second-color-text, 16px, $first-color, 500, 200px, 45px, 30px);
 }

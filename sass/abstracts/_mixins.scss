@@ -1,0 +1,9 @@
+@mixin button($bg,$fs,$col,$fw,$wd,$hg, $bor){
+    background-color: $bg;
+    font-size: $fs;
+    color: $col;
+    font-weight: $fw;
+    width: $wd;
+    height: $hg;
+    border-radius: $bor;
+}
